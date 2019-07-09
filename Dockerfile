@@ -26,4 +26,4 @@ COPY ./08-domains-routes ./08-domains-routes
 
 # Do not run as PID 1, delegate signals to /bin/sh:
 # https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#handling-kernel-signals
-CMD reveal-md --host 0.0.0.0 --disable-auto-open
+CMD reveal-md . --host 0.0.0.0 --disable-auto-open

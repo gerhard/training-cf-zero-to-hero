@@ -40,7 +40,7 @@ build: $(DOCKER) ## b | Build Docker image
 b: build
 
 .PHONY: preview
-preview: $(DOCKER) ## p | Preview slides locally
+preview: build ## p | Preview slides locally
 	@$(DOCKER) run --interactive --tty \
 	  --volume $(CURDIR)/01-what-is-cf:/slides/01-what-is-cf \
 	  --volume $(CURDIR)/02-interact-with-cf:/slides/02-interact-with-cf \
